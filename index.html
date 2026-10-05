@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Teachers' Day Miss Rimsha! 🌸</title>
+
+  <!-- Google Fonts for Cute Aesthetic -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ffe6ea 0%, #ffc2d1 50%, #ffe5ec 100%);
+      font-family: 'Poppins', sans-serif;
+      color: #5c3d46;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      border: 3px solid #ffb3c6;
+      border-radius: 30px;
+      padding: 40px 25px;
+      max-width: 450px;
+      width: 100%;
+      box-shadow: 0 15px 35px rgba(255, 182, 193, 0.4);
+      position: relative;
+      animation: float 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-10px); }
+    }
+
+    .pookie-badge {
+      background: #ff85a1;
+      color: white;
+      font-family: 'Fredoka', cursive;
+      font-size: 14px;
+      padding: 6px 16px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 10px rgba(255, 133, 161, 0.3);
+    }
+
+    h1 {
+      font-family: 'Fredoka', cursive;
+      color: #ff4d6d;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    p.main-msg {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #6c4b5e;
+      margin-bottom: 25px;
+    }
+
+    .surprise-btn {
+      background: linear-gradient(45deg, #ff758f, #ff497c);
+      color: white;
+      font-family: 'Fredoka', cursive;
+      font-size: 18px;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(255, 73, 124, 0.35);
+      transition: all 0.3s ease;
+    }
+
+    .surprise-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(45deg, #ff497c, #ff758f);
+    }
+
+    .hidden-box {
+      display: none;
+      margin-top: 25px;
+      background: #fff0f3;
+      border: 2px dashed #ff85a1;
+      border-radius: 20px;
+      padding: 20px;
+      animation: fadeIn 0.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .hidden-box p {
+      font-size: 15px;
+      color: #a4133c;
+      font-weight: 600;
+    }
+
+    /* Floating Hearts Background */
+    .heart {
+      position: absolute;
+      color: #ff85a1;
+      font-size: 20px;
+      animation: hearts 5s linear infinite;
+      opacity: 0.6;
+    }
+
+    @keyframes hearts {
+      0% { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating background elements -->
+  <div class="heart" style="left: 10%; animation-duration: 6s;">🌸</div>
+  <div class="heart" style="left: 30%; animation-duration: 4s;">✨</div>
+  <div class="heart" style="left: 60%; animation-duration: 7s;">💖</div>
+  <div class="heart" style="left: 85%; animation-duration: 5s;">🌸</div>
+
+  <div class="card">
+    <div class="pookie-badge">🎀 World's Best Teacher 🎀</div>
+    <h1>Happy Teachers' Day, Miss Rimsha! 🌸✨</h1>
+
+    <p class="main-msg">
+      There are many teachers in school, but <b>Miss Rimsha</b>, you are truly special! 💕<br><br>
+      Aap ki meharbani aur support ke liye thank you so much.
+    </p>
+
+    <button class="surprise-btn" onclick="showSurprise()">Click For A Surprise! 🎁</button>
+
+    <div class="hidden-box" id="surpriseBox">
+      <p>✨ "Thank you for being the sweetest & best teacher ever! Hope your day is as amazing as you are!" 💖✨</p>
+    </div>
+  </div>
+
+  <script>
+    function showSurprise() {
+      var box = document.getElementById('surpriseBox');
+      if (box.style.display === 'block') {
+        box.style.display = 'none';
+      } else {
+        box.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
